@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="PlantBase">
+    <defName>PlantAmbrosia</defName>
+    <label>ambrosia bush</label>
+    <description>A rarely-sprouting bush which yields the ambrosia fruit. Ambrosia is pleasurable to eat and produces a slightly addictive chemical warmth effect.</description>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <graphicData>
+        <texPath>Things/Plant/Ambrosia</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+            <volume>(0.1, 0.2, 0.1)</volume>
+        </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible>
+        <nutrition>0.35</nutrition>
+    </ingestible>
+    <plant>
+        <fertilityMin>0.3</fertilityMin>
+        <fertilitySensitivity>0.15</fertilitySensitivity>
+        <growDays>6</growDays>
+        <reproduces>false</reproduces>
+        <leaflessGraphicPath>Things/Plant/Ambrosia_Leafless</leaflessGraphicPath>
+        <immatureGraphicPath>Things/Plant/AmbrosiaImmature</immatureGraphicPath>
+        <harvestYield>4</harvestYield>
+
+        <!-- Our sowable properties -->
+        <sowMinSkill>13</sowMinSkill>
+        <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+        </sowTags>
+
+        <harvestTag>Standard</harvestTag>
+        <harvestAfterGrowth>0.3</harvestAfterGrowth>
+        <harvestedThingDef>Ambrosia</harvestedThingDef>
+        <visualSizeRange>
+            <min>0.6</min>
+            <max>1.1</max>
+        </visualSizeRange>
+        <topWindExposure>0.1</topWindExposure>
+    </plant>
+</ThingDef>
+</Defs>
