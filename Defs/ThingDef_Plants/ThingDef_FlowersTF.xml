@@ -32,35 +32,4 @@
         </plant>
     </ThingDef>
 
-    <ThingDef ParentName="BushBase">
-        <defName>PlantRafflesia</defName>
-        <label>giant rafflesia</label>
-        <description>A rare, giant flower. You would think a giant flower would be beautiful, but this one is quite smelly and ugly.</description>
-        <statBases>
-            <Beauty>-6</Beauty>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Plant/Rafflesia</texPath>
-            <drawSize>1.7</drawSize>
-            <shadowData>
-                <volume>(0.55, 0.2, 0.2)</volume>
-                <offset>(0,0,-0.1)</offset>
-            </shadowData>
-        </graphicData>
-        <plant>
-            <topWindExposure>0.07</topWindExposure>
-
-            <!-- 
-            <sowMinSkill>10</sowMinSkill>
-            <sowTags>
-                <li>Decorative</li>
-            </sowTags>
-             -->
-            <wildClusterSizeRange>
-                <min>1</min>
-                <max>1</max>
-            </wildClusterSizeRange>
-        </plant>
-    </ThingDef>
-
 </Defs>
